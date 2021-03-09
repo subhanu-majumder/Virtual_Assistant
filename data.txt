@@ -1,0 +1,34 @@
+name : Mila
+date of creation : 1/2/2021
+project : A smart voice assistant.
+breakdown : Open application,
+            Tell the time,
+            Open web page,
+            Play music,
+            Create file,
+            Delete file,
+            Edit file,
+            Send mail,
+            Search google,
+            Wikipedia summary,
+            Print file,
+            translate
+            etc...
+core language : Python 3.9.2
+Dependencies : datetime,
+               os,
+               smtplib,
+               random,
+               sys,
+               webbrowser,
+               time,
+               keyboard,
+               pyttsx3,
+               google,
+               tqdm,
+               translate
+status : Currently working.
+final aim : Creation of voice activation, voice recognition, management of daily task and calendar.
+Author : Subhanu Majumder.
+
+
