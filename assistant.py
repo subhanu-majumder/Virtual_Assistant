@@ -29,8 +29,8 @@ def load_bar():
 
 def speak(audio):
     print(audio)
-    #engine.say(audio)
-    #engine.runAndWait()
+    engine.say(audio)
+    engine.runAndWait()
 
 
 def wishMe():
@@ -53,8 +53,8 @@ def sendEmail(receiver_mail, message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('neel.majumder005@gmail.com', 'suvajit.majumder')
-    server.sendmail('neel.majumder005@gmail.com', receiver_mail, message)
+    server.login('your_mail@gmail.com', 'your_password')
+    server.sendmail('your_mail@gmail.com', receiver_mail, message)
     server.close()
 
 
@@ -93,15 +93,12 @@ if __name__ == "__main__":
 
         elif 'open youtube' == query:
             webbrowser.open_new("https://www.youtube.com/")
-
-        elif 'open classroom' == query:
-            webbrowser.open_new('https://classroom.google.com/u/1/h')
-
+        
         elif 'open google' == query:
             webbrowser.open_new("google.com")
 
         elif 'open intellij' == query:
-            os.startfile("C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2020.3.2\\bin\\idea64.exe")
+            os.startfile("path to intellij")
 
         elif '.com' in query:
             index = query.index('.com') + 3
@@ -114,7 +111,7 @@ if __name__ == "__main__":
             webbrowser.open_new(query)
 
         elif 'play music' in query:
-            codepath = "C:\\Users\\Asus\\AppData\\Roaming\\Spotify\\Spotify.exe"
+            codepath = "path to spotify"
             os.startfile(codepath)
             time.sleep(4)
             keyboard.press_and_release('space')
@@ -128,7 +125,7 @@ if __name__ == "__main__":
 
         elif 'create file' in query:
             directory = input("Enter the directory :: ")
-            save_path = "C://Users//Asus//" + directory
+            save_path = "C://Users//<name>//" + directory
             name_of_file = input("What is the full name of the file :: ")
             completeName = os.path.join(save_path, name_of_file)
             file1 = open(completeName, "w")
@@ -136,7 +133,7 @@ if __name__ == "__main__":
 
         elif 'open file' in query:
             directory = input("Enter the directory :: ")
-            save_path = "C://Users//Asus//" + directory
+            save_path = "C://Users//<name>//" + directory
             name_of_file = input("What is the full name of the file :: ")
             full_path = save_path + "//" + name_of_file
             os.startfile(full_path)
@@ -149,7 +146,7 @@ if __name__ == "__main__":
 
         elif 'delete file' in query:
             directory = input("Enter the directory :: ")
-            save_path = "C://Users//Asus//" + directory
+            save_path = "C://Users//<name>//" + directory
             name_of_file = input("What is the full name of the file :: ")
             full_path = save_path + "//" + name_of_file
             os.remove(full_path)
@@ -182,7 +179,7 @@ if __name__ == "__main__":
 
         elif 'print file' in query:
             directory = input("Enter the directory :: ")
-            save_path = "C://Users//Asus//" + directory
+            save_path = "C://Users//<name>//" + directory
             name_of_file = input("What is the full name of the file :: ")
             full_path = save_path + "//" + name_of_file
             os.startfile(full_path, "print")
